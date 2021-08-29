@@ -12,9 +12,9 @@ export EDITOR=vim
 export MANPAGER='/bin/zsh -c "vim -MRn -c \"set buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
 export PATH="/home/josh/.cargo/bin:$PATH"
 export PATH="/home/josh/.local/bin:$PATH"
-source ~/.zsh_aliases
+#source ~/.zsh_aliases
 source ~/.git.zsh
-source ~/.fzf.zsh
+#source ~/.fzf.zsh
 
 ###################################################################
 
@@ -112,4 +112,4 @@ source ~/.prompt13.zsh
 
 autoload -U compinit && compinit -u
 
-jfetch
+alias config='/usr/bin/git --git-dir=$HOME/Projects/dotfiles/ --work-tree=$HOME'
